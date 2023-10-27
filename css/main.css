@@ -1,0 +1,115 @@
+body{
+    /*magin-margen del elemento*/
+    margin:0;
+    /*padding-margen hacia adentro*/
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/***************************************************/
+/*NAVEGACIÓN*/
+header{
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    display:flex; /*nos habilita usar flex-end y flex-start*/
+    justify-content: flex-end; /*justifiar a la derecha*/
+}
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    list-style: none; /*eliminar puntos*/
+    display: flex;
+    justify-content: center;
+    align-items: center; /*centrado verticalmente*/
+}
+a{
+    text-decoration: none; /*eliminar línea debajo del texto*/
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+
+/* Ícono del menú */
+nav .nav-right-section .menu{
+    /* Agregar íconos desde css */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen esté contenida en el elemento más grande */
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    /* Para que las imágenes no se repitan */
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+main{
+    /*agregar espacio entre header y main*/
+    margin-top: 200px;
+    text-align: center;
+}
+
+/***************************************************/
+/*MAIN*/
+main .main-logo{
+    width: 500px;
+    /*centrar absolutamente gracias a los márgenes automáticos*/
+    margin: 0 auto;
+}
+main .main-logo img{
+    height: 90px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    border: 1px solid; 
+    border-radius: 25px;
+    width: 525px;
+}
+
+main .main-input input{
+    height: 35px;
+    border: none;  /* quitar el borde */
+    outline: none; /* quitar el borde cuando está activo el input */
+    width: 450px;
+}
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+/***************************************************/
+
+/***************************************************/
+/***************************************************/
